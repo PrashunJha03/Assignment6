@@ -13,7 +13,7 @@ class TravelBooking {
 }
 
 class BusBooking extends TravelBooking {
-    String busType = "AC";
+    String busType = "Ac";
     int seatNumber;
 
     @Override
@@ -84,7 +84,6 @@ public class TravelBookingSystem {
         System.out.println("Source : " + t.source);
         t.calculateFare();
 
-        
         TravelBooking booking = new BusBooking();
         booking.distance = 200;
         booking.calculateFare();
